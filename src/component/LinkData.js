@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const LinkData = ({ link, children }) => (
-  <div>
-    <Link to={link}>
-      {children}
-    </Link>
-  </div>
+  <Link to={link}>
+    {children}
+  </Link>
 );
 
 LinkData.propTypes = {
