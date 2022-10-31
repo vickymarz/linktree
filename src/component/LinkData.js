@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const Links = ({ link, children }) => (
+const LinkData = ({ link, children }) => (
   <div>
     <Link to={link}>
       {children}
@@ -10,9 +10,9 @@ const Links = ({ link, children }) => (
   </div>
 );
 
-Links.propTypes = {
+LinkData.propTypes = {
   children: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
   link: PropTypes.string.isRequired,
 };
 
-export default Links;
+export default LinkData;
