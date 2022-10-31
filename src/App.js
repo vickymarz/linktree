@@ -1,4 +1,5 @@
 import React from 'react';
+import Homepage from './component/Homepage';
 
 const App = () => {
   const links = [
@@ -34,9 +35,10 @@ const App = () => {
     },
   ];
 
-  
   return (
-    <div>App</div>
+    <div>
+      <Homepage links={links} />
+    </div>
   );
 };
 
