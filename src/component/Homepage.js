@@ -21,7 +21,7 @@ const Homepage = ({ links }) => {
     <>
       <main className={styles.container}>
         <div className={styles.avatar}>
-          <Image src={avatar} alt="victor photo" className={styles.image} />
+          <Image src={avatar} alt="victor photo" id={styles.profile__img} />
         </div>
         <h1 className={styles.title}>Victor Okoroji</h1>
         <ul className={styles.lists}>

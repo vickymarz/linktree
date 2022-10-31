@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const LinkData = ({ link, children }) => (
-  <Link to={link}>
+  <a href={link} target="_blank" rel="noopener noreferrer">
     {children}
-  </Link>
+  </a>
 );
 
 LinkData.propTypes = {

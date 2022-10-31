@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Homepage from './component/Homepage';
 
 const App = () => {
@@ -21,7 +22,7 @@ const App = () => {
     {
       id: 4,
       title: 'Python Books',
-      url: 'https://books.zuri.team/python-for-beginners?ref_id=%3Cvickymarz%3E',
+      url: 'https://books.zuri.team/python-for-beginners?ref_id=process.env.REACT_APP_NOT_SECRET_CODE',
     },
     {
       id: 5,
@@ -29,7 +30,7 @@ const App = () => {
       url: 'https://background.zuri.team/',
     },
     {
-      id: 5,
+      id: 6,
       title: 'Design Books',
       url: 'https://books.zuri.team/design-rules',
     },
@@ -37,7 +38,10 @@ const App = () => {
 
   return (
     <>
-      <Homepage links={links} />
+      <Routes>
+        <Route path="/" element={<Homepage links={links} />} />
+      </Routes>
+
     </>
   );
 };
