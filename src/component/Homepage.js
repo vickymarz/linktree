@@ -28,10 +28,10 @@ const Homepage = ({ links }) => {
           {linkData}
         </ul>
         <div className={styles.social}>
-          <LinkData link="https://github.com/vickymarz">
+          <LinkData link="https://github.com/vickymarz" id="github">
             <Image src={github} alt="github" />
           </LinkData>
-          <LinkData link="{process.env.REACT_APP_NOT_SECRET_CODE}" id="slack">
+          <LinkData link={process.env.REACT_APP_SLACK_USERNAME} id="slack">
             <Image src={slack} alt="slack" />
           </LinkData>
         </div>

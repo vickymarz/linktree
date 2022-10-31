@@ -22,7 +22,7 @@ const App = () => {
     {
       id: 'book__python',
       title: 'Python Books',
-      url: 'https://books.zuri.team/python-for-beginners?ref_id=process.env.REACT_APP_NOT_SECRET_CODE',
+      url: `https://books.zuri.team/python-for-beginners?ref_id=${process.env.REACT_APP_SLACK_USERNAME}`,
     },
     {
       id: 'pitch',
