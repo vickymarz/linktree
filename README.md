@@ -1,9 +1,9 @@
 # linktree
 This is a web app that allows a person show their personal profile and link to various digital things that they sell
 
-![screenshot](./src/Images/Screen-shoot.gif)
+![screenshot](./src/images/screenshot.png)
 
-My goal here is to Build a single page web application for linktree-app using the React library, Click [here](https://space-travellers-booking-app.herokuapp.com/) to get a live preview of the project.
+My goal here is to Build a single page web application for linktree-app using the React library, Click [here](https://mylinktrees.netlify.app/) to get a live preview of the project.
 
 ## Built With
 - React
