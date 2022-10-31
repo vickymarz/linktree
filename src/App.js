@@ -5,32 +5,32 @@ import Homepage from './component/Homepage';
 const App = () => {
   const links = [
     {
-      id: 1,
+      id: 'twitter',
       title: 'Twitter Link',
       url: 'https://twitter.com/Vicky_marz',
     },
     {
-      id: 2,
+      id: 'btn__zuri',
       title: 'Zuri Team',
       url: 'https://training.zuri.team/',
     },
     {
-      id: 3,
+      id: 'books',
       title: 'Zuri Books',
       url: 'https://books.zuri.team/',
     },
     {
-      id: 4,
+      id: 'book__python',
       title: 'Python Books',
       url: 'https://books.zuri.team/python-for-beginners?ref_id=process.env.REACT_APP_NOT_SECRET_CODE',
     },
     {
-      id: 5,
+      id: 'pitch',
       title: 'Background Check for Coders',
       url: 'https://background.zuri.team/',
     },
     {
-      id: 6,
+      id: 'book__design',
       title: 'Design Books',
       url: 'https://books.zuri.team/design-rules',
     },

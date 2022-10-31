@@ -11,7 +11,7 @@ import styles from '../css/homepage.module.css';
 const Homepage = ({ links }) => {
   const linkData = links.map(({ id, title, url }) => (
     <li key={id} className={styles.list}>
-      <LinkData link={url}>
+      <LinkData link={url} id={id}>
         {title}
       </LinkData>
     </li>
@@ -31,7 +31,7 @@ const Homepage = ({ links }) => {
           <LinkData link="https://github.com/vickymarz">
             <Image src={github} alt="github" />
           </LinkData>
-          <LinkData link="slack">
+          <LinkData link="{process.env.REACT_APP_NOT_SECRET_CODE}" id="slack">
             <Image src={slack} alt="slack" />
           </LinkData>
         </div>
