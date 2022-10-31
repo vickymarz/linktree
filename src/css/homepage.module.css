@@ -1,11 +1,11 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    padding: 64px 0px 32px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 64px 0 32px 0;
 }
 
 .avatar {
@@ -17,119 +17,122 @@
   height: 88px;
 }
 
-.profile__img {
+#profile__img {
   border-radius: 275px;
+  object-fit: cover;
 }
 
 .title {
-color: #101828;
-font-weight: 700;
-font-size: 18px;
-line-height: 28px;
-padding-top: 24px;
-padding-bottom: 32px;
+  color: #101828;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  padding-top: 24px;
+  padding-bottom: 32px;
 }
 
 .lists {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
 }
 
 .list {
-text-align: center;
-padding: 24px 32px;
-background: #EAECF0;
-width: 100%;
-border: 1px solid #EAECF0;
-border-radius: 8px;
-cursor: pointer;
-list-style-type: none;
+  text-align: center;
+  padding: 24px 32px;
+  background: #eaecf0;
+  width: 100%;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  cursor: pointer;
+  list-style-type: none;
 }
 
 .list a {
-    font-weight: 500;
-    font-size: 14px;
-    color: #101828;
+  font-weight: 500;
+  font-size: 14px;
+  color: #101828;
 }
 
 .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
 .social a {
-    width: 24px;
-    height: 23.45px;
-    margin-top: 48px;
-    margin-bottom: 70px;
+  width: 24px;
+  height: 23.45px;
+  margin-top: 48px;
+  margin-bottom: 70px;
 }
 
 footer {
-    border-top: 1px solid rgb(218, 215, 215);
-    padding: 32px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 18px;
+  border-top: 1px solid rgb(218, 215, 215);
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 18px;
 }
 
 .vector {
-    position: relative;
-    padding-right: 10px;
+  position: relative;
+  padding-right: 10px;
 }
 
 .vector::after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    content: url(../images/Vector.png);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: url(../images/Vector.png);
 }
 
 footer h2 {
-    font-weight: 900;
-    font-size: 18px;
+  font-weight: 900;
+  font-size: 18px;
 }
 
 footer p {
-font-weight: 400;
-color: #667085;
+  font-weight: 400;
+  color: #667085;
 }
 
 .footerImg {
-    width: 99.1px;
-    height: 24px
+  width: 99.1px;
+  height: 24px;
 }
 
 @media only screen and (min-width: 768px) {
-    .container {
-        width: 80%;
-    }
-    .title {
-        font-size: 20px;
-        }
-        .list a {
-            font-size: 18px;
-        }
+  .container {
+    width: 80%;
+  }
 
-        footer {
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 20px 100px;
-        }
+  .title {
+    font-size: 20px;
+  }
 
-        footer h2 {
-            font-weight: 900;
-            font-size: 24px;
-        }
+  .list a {
+    font-size: 18px;
+  }
 
-        footer p {
-            font-size: 16px;
-        }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 100px;
+  }
+
+  footer h2 {
+    font-weight: 900;
+    font-size: 24px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
 }
