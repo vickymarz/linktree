@@ -17,7 +17,7 @@ const Homepage = ({ links }) => {
   ));
 
   return (
-    <div>
+    <main>
       <Image src={avatar} alt="victor photo" />
       <div>
         {linkData}
@@ -35,7 +35,7 @@ const Homepage = ({ links }) => {
         <p>HNG Internship 9 Frontend Task</p>
         <Image src={hng} alt="ingressive logo" />
       </footer>
-    </div>
+    </main>
   );
 };
 
