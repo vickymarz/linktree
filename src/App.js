@@ -36,9 +36,9 @@ const App = () => {
   ];
 
   return (
-    <div>
+    <>
       <Homepage links={links} />
-    </div>
+    </>
   );
 };
 
