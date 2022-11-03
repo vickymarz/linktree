@@ -34,6 +34,11 @@ const App = () => {
       title: 'Design Books',
       url: 'https://books.zuri.team/design-rules',
     },
+    {
+      id: 'contact',
+      title: 'Contact Me',
+      url: '/contact',
+    },
   ];
 
   return (
