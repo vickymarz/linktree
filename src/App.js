@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Homepage from './component/Homepage';
+import Contact from './pages/Contact';
+import Homepage from './pages/Homepage';
 
 const App = () => {
   const links = [
@@ -42,12 +43,10 @@ const App = () => {
   ];
 
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Homepage links={links} />} />
-      </Routes>
-
-    </>
+    <Routes>
+      <Route path="/" element={<Homepage links={links} />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
   );
 };
 
