@@ -50,12 +50,19 @@ color: #344054;
   border: 1px solid #D0D5DD;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+  outline: none;
 }
 
 input::placeholder {
   font-weight: 400;
   font-size: 16px;
   color: #667085;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .textarea {
@@ -69,6 +76,7 @@ border-radius: 8px;
 font-size: 16px;
 line-height: 24px;
 color: #667085;
+outline: none;
 }
 
 .conditions {
@@ -81,9 +89,31 @@ color: #667085;
 }
 
 .checkbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox label {
   background: #FFFFFF;
   border: 1px solid #D0D5DD;
   border-radius: 6px;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  display: block;
+}
+
+.checkbox input {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+input:checked + label {
+  background: #1570EF;
 }
 
 .conditions span {
@@ -103,4 +133,27 @@ font-size: 16px;
 margin-bottom: 64px;
 color: #FFFFFF;
 width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+
+  .container p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .name .inputContainer {
+    flex: 1;
+  }
 }

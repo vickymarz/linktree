@@ -10,15 +10,15 @@ const Contact = () => (
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
       <form className={styles.form}>
         <div className={styles.name}>
-          <Input type="text" name="First name" placeholder="Enter your first name" />
-          <Input type="text" name="Last name" placeholder="Enter your last name" />
+          <Input type="text" name="First name" placeholder="Enter your first name" className={styles.inputContainer} />
+          <Input type="text" name="Last name" placeholder="Enter your last name" className={styles.inputContainer} />
         </div>
-        <Input type="email" name="Email" placeholder="yourname@email.com" />
+        <Input type="email" name="Email" placeholder="yourname@email.com" className={styles.inputContainer} />
         <textarea className={styles.textarea}>
           Send me a message and I&rsquo;ll reply you as soon as possible...
         </textarea>
         <div className={styles.conditions}>
-          <input type="checkbox" className={styles.checkbox} />
+          <Input type="checkbox" className={styles.checkbox} name="" />
           <span>You agree to providing your data to Victor Okoroji who may contact you.</span>
         </div>
         <button type="submit" className={styles.submitButton}> Send message </button>

@@ -1,17 +1,25 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import styles from '../css/contact.module.css';
 
-const Input = ({ type, name, placeholder }) => (
-  <div className={styles.inputContainer}>
+const Input = ({
+  type, name, placeholder, className,
+}) => (
+  <div className={className}>
     <label htmlFor={name}>{name}</label>
-    <input type={type} id={name} placeholder={placeholder} />
+    <input type={type} id={name} checked placeholder={placeholder} />
   </div>
 );
 
 Input.propTypes = {
   type: propTypes.string.isRequired,
   name: propTypes.string.isRequired,
-  placeholder: propTypes.string.isRequired,
+  placeholder: propTypes.string,
+  className: propTypes.string,
 };
+
+Input.defaultProps = {
+  placeholder: '',
+  className: '',
+};
+
 export default Input;
