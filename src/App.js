@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Contact from './pages/Contact';
-import Homepage from './pages/Homepage';
+import Contact from './component/pages/Contact';
+import Homepage from './component/pages/Homepage';
 
 const App = () => {
   const links = [

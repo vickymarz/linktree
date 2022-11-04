@@ -1,10 +1,11 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import styles from '../css/contact.module.css';
 
 const Input = ({ type, name, placeholder }) => (
-  <div>
+  <div className={styles.inputContainer}>
     <label htmlFor={name}>{name}</label>
-    <input type={type} id={name} placeholder={placeholder}/>
+    <input type={type} id={name} placeholder={placeholder} />
   </div>
 );
 
