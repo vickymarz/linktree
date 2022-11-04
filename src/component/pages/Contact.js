@@ -15,7 +15,7 @@ const Contact = () => (
         </div>
         <Input type="email" name="Email" placeholder="yourname@email.com" className={styles.inputContainer} />
         <textarea className={styles.textarea}>
-          Send me a message and I&rsquo;ll reply you as soon as possible...
+          Send me a message and I&rsquo;ll reply to you as soon as possible...
         </textarea>
         <div className={styles.conditions}>
           <Input type="checkbox" className={styles.checkbox} name="" />
