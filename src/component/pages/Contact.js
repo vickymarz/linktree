@@ -24,25 +24,32 @@ const Contact = () => {
     if (firstNameRef.current.value.length === 0 || firstNameRef.current.value.trim() === '') {
       errors.first_name = 'Please enter a message';
       firstNameRef.current.focus();
+      firstNameRef.current.style.border = '1px solid #F89687';
     }
 
     if (lastNameRef.current.value.length === 0 || lastNameRef.current.value.trim() === '') {
       errors.last_name = 'Please enter a message';
       lastNameRef.current.focus();
+      lastNameRef.current.style.border = '1px solid #F89687';
     }
 
     if (!regex.test(emailRef.current.value)) {
       errors.email = 'This is not a valid email format!';
       emailRef.current.focus();
+      emailRef.current.style.border = '1px solid #F89687';
     }
 
     if (emailRef.current.value.length === 0 || firstNameRef.current.value.trim() === '') {
       errors.email = 'Please enter a message';
       emailRef.current.focus();
+      emailRef.current.style.border = '1px solid #F89687';
     }
+
     if (textAreaRef.current.value.length === 0 || firstNameRef.current.value.trim() === '') {
       errors.message = 'Please enter a message';
       textAreaRef.current.focus();
+      textAreaRef.current.style.border = '1px solid #F89687';
+      textAreaRef.current.style.boxShadow = '0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC';
     }
 
     return errors;
