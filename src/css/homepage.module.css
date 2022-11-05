@@ -42,7 +42,6 @@
 
 .list {
   text-align: center;
-  padding: 24px 32px;
   background: #eaecf0;
   width: 100%;
   border: 1px solid #eaecf0;
@@ -55,6 +54,9 @@
   font-weight: 500;
   font-size: 14px;
   color: #101828;
+  width: 100%;
+  display: block;
+  padding: 24px 32px;
 }
 
 .social {
