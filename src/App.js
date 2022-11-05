@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Homepage from './component/Homepage';
+import Contact from './component/pages/Contact';
+import Homepage from './component/pages/Homepage';
 
 const App = () => {
   const links = [
@@ -34,15 +35,18 @@ const App = () => {
       title: 'Design Books',
       url: 'https://books.zuri.team/design-rules',
     },
+    {
+      id: 'contact',
+      title: 'Contact Me',
+      url: '/contact',
+    },
   ];
 
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Homepage links={links} />} />
-      </Routes>
-
-    </>
+    <Routes>
+      <Route path="/" element={<Homepage links={links} />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
   );
 };
 
