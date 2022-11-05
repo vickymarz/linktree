@@ -54,6 +54,18 @@
   outline: none;
 }
 
+.inputContainer small {
+  font-size: 14px;
+  line-height: 20px;
+  color: #f83f23;
+}
+
+.textareaContainer small {
+  font-size: 14px;
+  line-height: 20px;
+  color: #f83f23;
+}
+
 .checkbox input {
   -webkit-appearance: none;
   cursor: pointer;
