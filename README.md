@@ -7,10 +7,10 @@ My goal here is to Build a single page web application for linktree-app using th
 
 ## Built With
 - React
+- CSS module
 - Stylelint
 - ESlint
-- GitFlow.
-- NPM.
+
 
 ### Prerequisites
 The basic requirements for building the executable are:
@@ -33,6 +33,14 @@ npm install
 ```
 every package module required to build the project is listed in the package.json file. this is used as a reference to get all dependencies.
 
+## Running
+
+To run the program on a browser through a server run this command in your cli
+```
+npm start
+```
+This should open the page in your localhost on port 3000. then you'd be able to view the built page generated using webpack.
+
 ## Building
 
 To build the project run:
@@ -41,13 +49,6 @@ npm run build
 ```
 after you run this successfully you'd locate the build from in the ```build``` folder located from the parent directory of the project.
 
-## Running
-
-To run the program on a browser through a server run this command in your cli
-```
-npm start
-```
-This should open the page in your localhost on port 3000. then you'd be able to view the built page generated using webpack.
 
 ## 🤝 Contributing
 
